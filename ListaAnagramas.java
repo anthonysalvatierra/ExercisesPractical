@@ -1,5 +1,9 @@
 import java.util.*;
 
+/* la funcion recibe un arreglo de palabras y devuelve
+* una lista de las palabras que son anagramas, es decir,
+* que possen exactamente las mismas letras */
+
 public class ListaAnagramas {
     public static void main(String[] args) {
         String[] strs = {"eat","tea","tan","ate","nat","bat"};
