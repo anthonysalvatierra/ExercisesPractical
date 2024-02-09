@@ -1,20 +1,20 @@
 import java.util.*;
 
-/* la funcion recibe un arreglo de palabras y devuelve
-* una lista de las palabras que son anagramas, es decir,
-* que possen exactamente las mismas letras */
+/* the function receives a words' array and returns
+* an anagram words' list, that is,
+* they have exactly the same letters */
 
-public class ListaAnagramas {
+public class AnagramsList {
     public static void main(String[] args) {
-        String[] strs = {"eat","tea","tan","ate","nat","bat"};
-        System.out.println(groupAnagrams(strs));
+        String[] array = {"eat","tea","tan","ate","nat","bat"};
+        System.out.println(groupAnagrams(array));
     }
 
-    public static List<List<String>> groupAnagrams(String[] strs) {
+    public static List<List<String>> groupAnagrams(String[] array) {
 
         Map<String, List<String>> wordOrdered = new HashMap<>();
 
-        for (String str : strs) {
+        for (String str : array) {
             char[] chars = str.toCharArray();
             Arrays.sort(chars);
             String sortedStr = new String(chars);
