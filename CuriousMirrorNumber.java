@@ -36,7 +36,7 @@ public class CuriousMirrorNumber {
 
             int reverse = Integer.parseInt(new String(digitsReverse));
 
-            System.out.printf("The mirror number of %d is %d\n", numero, reverse);
+            System.out.printf("The mirror number of %d is %d\n", number, reverse);
 
         }
 
@@ -48,12 +48,12 @@ public class CuriousMirrorNumber {
 
         if(String.valueOf(result).endsWith(String.valueOf(number))){
 
-            System.out.println(numero + " is curious (" + result + ")");
+            System.out.println(number + " is curious (" + result + ")");
             return 1;
 
         }else{
 
-            System.out.println(numero + " is not curious (" + result + ")");
+            System.out.println(number + " is not curious (" + result + ")");
             return 0;
 
         }
